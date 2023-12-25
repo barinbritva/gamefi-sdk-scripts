@@ -1,6 +1,14 @@
 {
   "name": "gamefi-sdk-scripts",
   "version": "0.0.1",
+  "main": "./dist/index.js",
+  "files": [
+    "./dist"
+  ],
+  "types": "./dist",
+  "bin": {
+    "gamefi-sdk-scripts": "./dist/index.js"
+  },
   "scripts": {
     "build": "tsc",
     "dev": "tsc -w"
@@ -12,6 +20,7 @@
     "@ton/ton": "^13.9.0",
     "@types/inquirer": "^8.0.0",
     "@types/node": "^20.10.5",
+    "dotenv": "^16.3.1",
     "inquirer": "^8.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
